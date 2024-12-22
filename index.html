@@ -1,22 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title> Assignment01 </title>
 </head>
+
+<style>
+    .container {
+        background-color: rgb(247, 236, 218);
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .submit-button {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+</style>
+</head>
+
 <body>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <h1>My Home Page</h1>
+  <h1 style="text-align: center;"> แบบสอบถาม </h1>
   <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit ea libero corrupti alias unde nesciunt minima, cumque nihil ullam possimus amet totam commodi voluptates vel, adipisci officia explicabo eos.</p>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolorum ab fuga delectus commodi animi, vero ut fugit ad et officiis? Beatae delectus ipsa dignissimos quos laboriosam explicabo? Quis, ab?
-  Atque, quia animi placeat id iste a veniam soluta, expedita libero enim modi voluptas alias quo odit pariatur vel, numquam et! Repudiandae magni culpa, esse rerum odit dignissimos numquam repellat.
-  Possimus reprehenderit dolorem at nesciunt sunt maxime eius officia eveniet dolorum ducimus suscipit laboriosam delectus commodi veritatis est animi iusto quae rerum molestiae aperiam perferendis repellendus, velit repudiandae dicta. Soluta.
-  Consequatur voluptates nulla quaerat corrupti, quis ab doloremque exercitationem? Ullam aspernatur, magnam nostrum adipisci quas expedita odio. Doloremque, pariatur! Autem voluptatibus harum quos libero facere, ullam placeat id nam alias.
-  Aspernatur iure facere error vero veniam doloremque deleniti, amet culpa voluptas natus molestiae ad nihil officia ipsam eius, ullam, quaerat doloribus perferendis minima. Odio, natus voluptate unde beatae quia cumque!</p>
- <hr>
+<div class="container">
+    <body>
+        <h3> ข้อมูลผู้ตอบแบบสอบถาม </h3>
+      
+        <tbody>
+        <label for="fname"> ชื่อ-นามสกุล </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname"> รหัสนักศึกษา </label>
+        <input type="password" id="lname" name="lname"><br><br>
+      
+        <label>เพศ:</label>
+        <input type="radio" name="gender" value="male"> ชาย
+        <input type="radio" name="gender" value="female"> หญิง<br><br>
+      
+        <label for="faculty"> สังกัดคณะ </label>
+        <select id="faculty" name="faculty">
+          <option value="Science"> วิทยาศาสตร์ </option>
+          <option value="Engineering"> วิศวกรรมศาสตร์ </option>
+          <option value="Computer science"> วิทยาการคอมพิวเตอร์ </option>
+          <option value="Education"> ครุศาสตร์ </option>
+          <option value="Business Administration and Management"> บริหารธุรกิจและการจัดการ 
+          </option>
+          <option value="Humanities"> มนุษยศาสตร์ </option>
+          <option value="Industrial technology"> เทคโนโลยีอุตสาหกรรม </option>
+          <option value="Agriculture"> เกษตรศาสตร์ </option>
+          <option value="Nursing Science"> พยาบาลศาสตร์
+          </option>
+          <option value="Public health"> สาธารณสุขศาสตร์ </option>
+          <option value="Thai traditional medicine and alternatives"> แพทย์แผนไทยและทางเลือก </option>
+          <option value="Jurisprudence"> นิติศาสตร์ </option>
+          </select><br>
+      
+        <h3> แม่สีที่ชอบ </h3>
+          <input type="checkbox" name="vehicle1" value=" Red ">
+          <label for="vehicle1">สีแดง</label>
+          <input type="checkbox" name="vehicle2" value=" Green ">
+          <label for="vehicle2">สีเขียว</label>
+          <input type="checkbox" name="vehicle3" value=" Blue ">
+          <label for="vehicle3">สีน้ำเงิน</label><br>
+      
+          <h3> ผลไม้ที่ชื่อชอบ </h3>
+          <input type="checkbox" name="vehicle1" value=" มะม่วง ">
+          <label for="vehicle1">มะม่วง</label>
+          <input type="checkbox" name="vehicle2" value=" น้อยหน่า ">
+          <label for="vehicle2"> น้อยหน่า </label>
+          <input type="checkbox" name="vehicle3" value=" ทุเรียน ">
+          <label for="vehicle3"> ทุเรียน </label><br>
+          <input type="checkbox" name="vehicle1" value=" ลำไย ">
+          <label for="vehicle1"> ลำไย </label>
+          <input type="checkbox" name="vehicle2" value=" ฝรั่ง ">
+          <label for="vehicle2"> ฝรั่ง </label>
+          <input type="checkbox" name="vehicle3" value=" แตงโม ">
+          <label for="vehicle3"> แตงโม </label><br>
+      
+          <h3> อาหารที่ชื่นชอบ </h3>
+          <input type="checkbox" name="vehicle1" value=" ต้มยำกุ้ง ">
+          <label for="vehicle1"> ต้มยำกุ้ง </label>
+          <input type="checkbox" name="vehicle2" value=" ไข่เจียวหมูสับ ">
+          <label for="vehicle2"> ไข่เจียวหมูสับ </label>
+          <input type="checkbox" name="vehicle3" value=" แกงข่าไก่ ">
+          <label for="vehicle3"> แกงข่าไก่ </label><br>
+          <input type="checkbox" name="vehicle1" value=" แกงเขียวหวานไก่ ">
+          <label for="vehicle1"> แกงเขียวหวานไก่ </label>
+          <input type="checkbox" name="vehicle2" value=" ผัดไทย ">
+          <label for="vehicle2"> ผัดไทย </label>
+          <input type="checkbox" name="vehicle3" value=" ราดหน้าหมี่กรอบ ">
+          <label for="vehicle3"> ราดหน้าหมี่กรอบ </label><br><br>
+        </form>
+      
+        <input class="submit-button" type="submit" value="บันทึก">
+      </tbody>
+      </table>
+      </body>
+    </div>
+
 </body>
 </html>
